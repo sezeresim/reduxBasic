@@ -1,0 +1,10 @@
+.CounterOutput {
+	width: 100%;
+	background-color: #fcd000;
+	color: black;
+	font-size: 3rem;
+	text-align: center;
+	padding: 20px 0;
+	box-sizing: border-box;
+	font-weight: bold;
+}

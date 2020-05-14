@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="theme-color" content="#000000" />
+		<!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<link rel="shortcut icon" href="./favicon.ico" />
+		<!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+		<title>React App</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			div {
+				text-align: center;
+				border: 1px solid white;
+			}
+			ul {
+				counter-reset: my-awesome-counter;
+				list-style: none;
+				padding-left: 40px;
+				text-align: center;
+			}
+			ul li {
+				margin: 0 0 0.5rem 0;
+				counter-increment: my-awesome-counter;
+				position: relative;
+			}
+			ul li::before {
+				margin-left: 30px;
+
+				content: counter(my-awesome-counter);
+				color: #fcd000;
+				font-size: 1rem;
+				font-weight: bold;
+				position: absolute;
+				--size: 32px;
+				left: calc(-1 * var(--size) - 10px);
+				line-height: var(--size);
+				width: var(--size);
+				height: var(--size);
+				top: 0;
+				transform: rotate(-10deg);
+				background: black;
+				border-radius: 50%;
+				text-align: center;
+				box-shadow: 1px 1px 0 #999;
+			}
+			li {
+				font-size: 2rem;
+			}
+
+			body {
+				background: #191919;
+				color: #eee;
+				font-family: 'Source Code Pro', monospace;
+				line-height: 1.4;
+				font-size: 90%;
+				margin: 2rem;
+			}
+			button {
+				width: 150px;
+				padding: 20px;
+				box-sizing: border-box;
+				margin: 16px;
+				background-color: greenyellow;
+				border: 1px solid white;
+				box-shadow: 0 2px 2px black;
+				font-size: 1rem;
+				font-weight: bold;
+				text-align: center;
+				cursor: pointer;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<noscript>
+			You need to enable JavaScript to run this app.
+		</noscript>
+		<div id="root"></div>
+		<!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    --></body>
+</html>
